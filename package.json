@@ -6,7 +6,9 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-		"build": "docker compose --env-file .env -f ./open-webui/docker-compose.yml up -d"
+    "owui:up": "docker compose --env-file .env -f ./open-webui/docker-compose.yml up -d",
+    "owui:dev": "docker compose --env-file .env -f ./open-webui/docker-compose.yml -f ./open-webui/docker-compose.dev.yml up -d",
+    "owui:down": "docker compose --env-file .env -f ./open-webui/docker-compose.yml down"
   },
   "keywords": [],
   "author": "",
