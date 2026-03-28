@@ -1,2 +1,4 @@
 node_modules
 .env
+open-webui/openapi.json
+open-webui/collection.json
