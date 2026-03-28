@@ -1,0 +1,14 @@
+# 1. Remove old container
+docker rm -f open-webui
+
+# 2. Start fresh
+docker compose up -d
+
+# 3. Check logs
+docker logs -f open-webui
+
+# 4. Check running containers
+docker ps -a
+
+# 5. Stop & remove compose services
+docker compose down
